@@ -19,7 +19,7 @@ class MPU6050Class(SensorClass):
             
     def setup(self):
         # Sensor initialization
-        self.mpu = mpu6050.MPU6050(0x69)
+        self.mpu = mpu6050.MPU6050(address)
         self.mpu.dmpInitialize()
         self.mpu.setDMPEnabled(True)
 
